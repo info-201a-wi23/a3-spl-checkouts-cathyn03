@@ -22,6 +22,7 @@ These will likely be calculated using your DPLYR skills, answering questions suc
 
 Feel free to calculate and report values that you find relevant.
 
+Among some of the values I calculated were average number of library item checkouts for each year, which found that the average checkout value of all the items were kept relatively stable around 23.5 checkouts with a difference of plus or minus 3 and no extremely high or low outliers to be reported. Another thing I evaluated was the total number of checkouts each year for different books within the same series, the results of which make perfect sense. In the years with its maximum checkouts, the first book had the highest number of checkouts with almost 300 then the second book followed with approximately 200, and the last book had the least with less than 150, this possibly shows a reader's lack of interest in continuing the stories. Last, I examined the distribution of a book's material type in all of the checkouts in the last six years, which showed that books in its physical forms were still used most frequently over ebooks and audiobooks. According the Seattle Public Library's database, books have over 100,000 more checkouts than ebooks and the double the amount of audiobooks checked out.
 ### The Dataset
 
 -   Who collected/published the data?\
@@ -50,11 +51,13 @@ When we say "clear" or "human readable" titles and labels, that means that you s
 Here's an example of how to run an R script inside an RMarkdown file:
 
 ```{r, echo = FALSE, warning = FALSE}
-library('ggplot2')
 source('SPL_Chart_1.R')
 chart_1
 
 ```
+
+
+In the first trends over time chart I evaluated average number of checkouts of all the content within the library for each year, the graph of which is separated into these respective years. The graph starts at its lowest point in 2017 and increases steadily into 2018, from 2018 to 2019 it still experiences an increase but a smaller one. It once again increases from 2019 to 2020, which is also the year that peaks in highest average checkouts. The trend declines for the next 2 years and only picks up again in 2023 but that could change seeing as it has only been two months into the current year.
 
 ### Second Trends Over Time Chart
 
@@ -78,6 +81,8 @@ chart_2
 
 ```
 
+In the second trends over time graph, I compared three different books from the same series and author to see if the order would impact how frequently it was checked out as well as answering a question I had about how dedicated readers are to a book series. As you can see, the results were nothing unexpected, they all followed a similar trend pattern reaching their highest checkout numbers in 2020-2021, the first book had the highest number of checkouts, which decreased after each book. Publication date/how old the book is does not seem to matter in terms of its popularity as the oldest book still has many checkouts within the last couple of years. I did however think that the second and the third book would have a similar number of checkouts and the disparity shocked me a little because I have read this books series before and the second book ends somewhat on a cliffhanger and I assumed that readers would be more curious to figure out the issue would be resolved.
+
 ### Your Choice
 
 The last chart is up to you. It could be a line plot, scatter plot, histogram, bar plot, stacked bar plot, and more. Here are some requirements to help guide your design:
@@ -93,3 +98,6 @@ source('SPL_Chart_3.R')
 chart_3
 
 ```
+
+In the third visualization, I chose to make a bar chart in order to see the distribution, whether it was even or skewed a certain direction between the material type of the book and how often it was being checked out. Back then there were only physical books to select from in libraries for borrowing, but now books are offered in other formats that include audiobooks and ebooks, which are both appealing for its convenience of being able to access them virtually anywhere from a phone or tablet. It is because of these reasons that surprise me when my findings show that regular books are still the most popular and most checked out material type considering my own personal experience having grown up with printed books but primarily using ebooks/textbooks whether its for school or leisure. 
+according the Seattle Public Library's database with more than 100,000 more checkouts than ebooks and the double the amount of audiobooks checked out.

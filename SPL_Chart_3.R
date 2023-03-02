@@ -15,7 +15,7 @@ chart_3 <- ggplot(data = material_type_books) +
   labs(title = 'Distribution of Book Forms in SPL Checkouts',
        x = 'Type of Book Format',
        y = 'Frequency of Checkouts') +
-  scale_y_continuous(labels = label_number_si()) +
+  scale_y_continuous(labels = label_number_si())
 
 View(chart_3)
 
